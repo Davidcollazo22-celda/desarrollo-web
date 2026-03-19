@@ -1,0 +1,117 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.description {
+    color: #666;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 50px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-sizing: border-box;
+    margin-bottom: 1.5rem;
+}
+
+input[type="text"]:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102,126,234,0.1);
+}
+
+button {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+button:hover {
+    background: #5a67d8;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.result {
+    padding: 1.5rem;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: #f8f9fa;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-break: break-word;
+    border: 2px solid #e9ecef;
+}
+
+.result.palindrome {
+    color: #28a745;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.result.not-palindrome {
+    color: #dc3545;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1.5rem;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    .result {
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+}
