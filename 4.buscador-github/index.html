@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de GitHub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Buscador de perfiles de GitHub</h1>
+        <p>Ingresa un nombre de usuario de GitHub para ver su perfil y repositorios.</p>
+        
+        <div class="search-box">
+            <input type="text" id="usernameInput" placeholder="ejemplo: octocat" autofocus>
+            <button id="searchBtn">Buscar</button>
+        </div>
+        
+        <div id="loading" class="loading hidden">Cargando...</div>
+        
+        <div id="profile" class="profile hidden">
+            <div class="profile-header">
+                <img id="avatar" src="" alt="Avatar">
+                <div class="profile-info">
+                    <h2 id="name"></h2>
+                    <p id="bio"></p>
+                    <p id="stats"></p>
+                    <a id="profileLink" href="#" target="_blank">Ver perfil en GitHub</a>
+                </div>
+            </div>
+            <h3>Repositorios</h3>
+            <div id="repos" class="repos"></div>
+        </div>
+        
+        <div id="error" class="error hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
